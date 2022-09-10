@@ -1,26 +1,74 @@
 .topnav {
-    background-color: white;
-    overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: black;
-    color: grey;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
     background-color: #04AA6D;
-    color: white;
+    overflow: hidden; 
+    font-family: 'Inter', sans-serif; 
+
   }
+  
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        background-color: white;
+        color: green;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    /* Add a color to the active/current link */
+    .topnav a.active {
+        background-color: #70FE00;
+        color: white;
+        font-family: 'Inter', sans-serif; 
+        font-weight: bold; 
+    font-family: 'Inter', sans-serif;
+    } 
+
+  
+h1{
+  font-family: 'Inter', sans-serif;
+}
+ h2{
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+ }
+ h3{
+  font-family: 'Inter', sans-serif;
+ }
+ ul{
+  font-family: 'Inter', sans-serif;
+ }
+ li{
+  font-family: 'Inter', sans-serif;
+ } 
+
+
+.logo {
+    font-family: 'Inter', sans-serif;
+    font-size: 75px; 
+    text-align: center;
+}
+
+ .tagline {
+    color: black; 
+    padding-left: 100px; 
+    font-size: 50px;
+ } 
+
+    .tagline strong.red {
+        font-size: 65px;
+        color: rgb(255, 0, 0);
+    } 
+
+    .tagline strong.green {
+        font-size: 65px;
+        color: #70FE00;
+    }
