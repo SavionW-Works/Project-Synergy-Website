@@ -54,4 +54,11 @@ h1{
     color: black; 
     padding-left: 100px; 
     font-size: 50px;
- }
+ } 
+
+ .logo {
+  font-family: 'Inter', sans-serif;
+  font-size: 95px; 
+  text-align: center; 
+  color: #00cc99;
+}

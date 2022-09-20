@@ -32,6 +32,16 @@
     font-family: 'Inter', sans-serif;
     } 
 
+
+.colorbox {
+    background-color: white; 
+    padding-top: 10px; 
+    padding-bottom: 10px;
+} 
+
+body {
+    background-color: bisque;
+ }
   
 h1{
   font-family: 'Inter', sans-serif;
@@ -51,10 +61,13 @@ h1{
  } 
 
 
+ 
+
 .logo {
     font-family: 'Inter', sans-serif;
-    font-size: 75px; 
-    text-align: center;
+    font-size: 95px; 
+    text-align: center; 
+    color: #00cc99;
 }  
 
 
@@ -63,7 +76,7 @@ h1{
     color: black; 
     padding-left: 100px; 
     font-size: 50px;
- } 
+ }  
 
     .tagline strong.red {
         font-size: 65px;
@@ -72,21 +85,41 @@ h1{
 
     .tagline strong.green {
         font-size: 65px;
-        color: #70FE00;
-    } 
+        color: #00cc99;
+    }  
+
+    .tagline h4 {
+        font-size: 15px; /*Won't change size for h4s :( */
+    }
 
 
 
  .description {
     font-family: 'Inter', sans-serif; 
     font-size: 30px; 
-    padding-left: 100px;
+    padding-left: 100px; 
+    padding-right: 150px;
  }  
 
  .description li {
     font-family: 'Inter', sans-serif; 
     font-size: 30px; 
     padding-left: 156px; /*Padding does not bring bullet point next to item :( */
- } 
+ }  
 
+ .image_resize {
+    max-width: 80%; 
+    max-height: 80%;  
+    flex-basis: 40%; 
+    justify-content: flex-end;
+    
+ }  
+
+ .info_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+    
     
