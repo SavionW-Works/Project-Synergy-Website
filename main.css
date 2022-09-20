@@ -40,7 +40,7 @@
 } 
 
 body {
-    background-color: bisque;
+    background-color: rgb(0, 0, 0);
  }
   
 h1{
@@ -87,6 +87,10 @@ h1{
         font-size: 65px;
         color: #00cc99;
     }  
+    
+    .tagline.white {
+        color: #FFFFFF;
+    } 
 
     .tagline h4 {
         font-size: 15px; /*Won't change size for h4s :( */
@@ -104,12 +108,10 @@ h1{
  .description li {
     font-family: 'Inter', sans-serif; 
     font-size: 30px; 
-    padding-left: 156px; /*Padding does not bring bullet point next to item :( */
+     /*Padding does not bring bullet point next to item :( */
  }  
 
- .image_resize {
-    max-width: 80%; 
-    max-height: 80%;  
+ .image_flex {  
     flex-basis: 40%; 
     justify-content: flex-end;
     
@@ -117,7 +119,7 @@ h1{
 
  .info_container {
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: center;
  }
 
