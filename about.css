@@ -13,14 +13,16 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif; 
+    transition-duration: .7s;
   }
   
   /* Change the color of links on hover */
   .topnav a:hover {
     background-color: white;
     color: green;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif; 
+    
   }
   
   /* Add a color to the active/current link */
