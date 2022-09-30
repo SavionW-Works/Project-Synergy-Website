@@ -1,3 +1,5 @@
+
+/* ABOUT US STYLESHEET*/
 .topnav {
     background-color: #04AA6D;
     overflow: hidden; 
@@ -63,4 +65,8 @@ h1{
   font-size: 95px; 
   text-align: center; 
   color: #00cc99;
+} 
+
+body {
+  background-color: white;
 }
