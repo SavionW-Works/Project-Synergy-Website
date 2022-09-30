@@ -80,19 +80,46 @@ h1{
  }  
 
     .tagline strong.red {
-        font-size: 65px;
-        color: rgb(255, 0, 0);
+        /* font-size: 65px; */
+        color: rgb(255, 0, 0); 
+        font-size: 100px;
+    }  
+
+    .tagline.center {
+        padding-left: 0px; 
+        text-align: center; 
+        font-size: 95px; 
     } 
 
+        .tagline.center.white {
+            color: white; 
+        } 
+
+        .tagline.center.black {
+            color: black; 
+        }
+
+
     .tagline strong.green {
-        font-size: 65px;
-        color: #00cc99;
+        /* font-size: 65px; */
+        color: #00cc99; 
+        font-size: 100px;
     }  
     
     .tagline.white {
         color: #FFFFFF;  
         
-    } 
+    }  
+
+    .tagline.white.big {
+        font-size: 100px;
+    }
+
+    li .tagline {
+        font-size: 45px; 
+        padding-left: 0px;
+    }
+
 
     .tagline h4 {
         font-size: 15px; /*Won't change size for h4s :( */
