@@ -1,3 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/*
+Might help with alignment: 
+ 
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;}  */
+
 .topnav {
     background-color: #04AA6D;
     overflow: hidden; 
@@ -79,6 +104,10 @@ h1{
     font-size: 50px;
  }  
 
+    .tagline.small {
+        font-size: 40px;
+    }
+
     .tagline strong.red {
         /* font-size: 65px; */
         color: rgb(255, 0, 0); 
@@ -111,13 +140,21 @@ h1{
         
     }  
 
-    .tagline.white.big {
-        font-size: 100px;
+    .tagline.white.big { /*Changed */
+        font-size: 85px; 
+        text-align: left;
+    }  
+
+    .tagline.white.small { /*Changed */
+        font-size: 42px; 
+        text-align: left;
     }
+    
 
     li .tagline {
         font-size: 45px; 
-        padding-left: 0px;
+        padding-left: 0px; 
+        
     }
 
 
@@ -129,16 +166,53 @@ h1{
 
  .description {
     font-family: 'Inter', sans-serif; 
-    font-size: 30px; 
+    font-size: 150%; 
     padding-left: 100px; 
-    padding-right: 150px;
+    padding-right: 150px; 
+    
  }  
 
- .description li {
+ul.description  li {
     font-family: 'Inter', sans-serif; 
-    font-size: 30px; 
+    font-size: 30px;  
+    display: inline-block;
      /*Padding does not bring bullet point next to item :( */
  }  
+
+/* Classes for feature images */
+
+.features {
+    display: flex; 
+    justify-content: center; 
+    padding: 0; 
+    list-style: none;
+} 
+
+    .features li {
+        width: calc(33.33333% - 2em);
+		margin-left: 2em;
+		margin-top: 3em; 
+    } 
+
+
+    .features li h1 {
+        margin-top: 0em; 
+        margin-bottom: 0em;
+        text-align: center; 
+    } 
+
+    .features li p {
+        margin-top: 0em;
+        text-align: center; 
+        font-size: 200%;
+    }  
+
+    .features li img {
+        text-align: center; 
+    }
+
+    
+
 
  .image_flex {  
     flex-basis: 40%; 
@@ -147,15 +221,58 @@ h1{
  }  
 
  .info_container {
-    display: flex;
-    align-items: left;
+    display: flex;  
+    padding-top: 2%; 
+    padding-bottom: 5%;
     justify-content: center;
+ }  
+
+ .info_container.left {
+    align-items: left;
+    
+ }   
+
+ .info_container.right {
+    align-items: right;
  } 
 
- .filter_green{
+ .logo_adjust{
+    padding-right: 10%;
     filter: invert(47%) sepia(91%) saturate(612%) hue-rotate(122deg) brightness(102%) contrast(102%); 
     
+ } 
+
+
+
+ .icon {
+    padding-left: 100px; 
+    padding-top: 45px;
  }
 
+    .icon.moneyloss{
+        padding-right: 10%;
+        filter: invert(16%) sepia(98%) saturate(5413%) hue-rotate(359deg) brightness(100%) contrast(121%); 
+        
+    }
+
+
+    .icon.gas{
+        padding-right: 10%;
+        filter: invert(47%) sepia(93%) saturate(396%) hue-rotate(4deg) brightness(90%) contrast(84%); 
+        
+    } 
+
+    .icon.battery{
+        padding-right: 10%;
+        filter: invert(42%) sepia(34%) saturate(5490%) hue-rotate(188deg) brightness(101%) contrast(108%); 
+        
+    } 
+
+    footer {
+        background-color: #04AA6D;
+        overflow: hidden; 
+        font-family: 'Inter', sans-serif;
+        color: white;
+    }
     
     
