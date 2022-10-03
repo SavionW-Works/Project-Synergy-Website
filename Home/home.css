@@ -191,7 +191,8 @@ ul.description  li {
     .features li {
         width: calc(33.33333% - 2em);
 		margin-left: 2em;
-		margin-top: 3em; 
+		margin-top: 3em;  
+        padding: 0;
     } 
 
 
@@ -207,9 +208,12 @@ ul.description  li {
         font-size: 200%;
     }  
 
-    .features li img {
+    /* .features li img {
+		margin-left: 2em;
+		margin-top: 3em;  
+        padding-left: 25%;
         text-align: center; 
-    }
+    } */
 
     
 
@@ -244,7 +248,17 @@ ul.description  li {
 
 
 
- .icon {
+
+
+/* Image Classes */
+
+
+
+.img_anchor { /* Should be used in divs, since imgs are inline */
+    text-align: center;
+}
+
+.icon {
     padding-left: 100px; 
     padding-top: 45px;
  }
