@@ -1,7 +1,25 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; 
+    padding: 0px;
 }
 
+body {
+    
+    margin: 0;
+    min-height: 100vh; 
+    font-family: sans-serif;
+ }
+
+ @media screen and (max-width: 1000px) {
+    .row, .navbar, .info_container, .features {   
+      flex-direction: column; 
+      flex-wrap: wrap;
+    } 
+
+    /* How do I set more specific media queries?? */
+
+    
+  }
 
 /*
 Might help with alignment: 
@@ -22,6 +40,70 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	vertical-align: baseline;}  */
+
+
+
+/* Flexboxes */
+.container {
+    display: flex; 
+    
+}  
+
+
+
+.info_container {
+    
+    display: flex;  
+     
+    
+    /* Takes up center 75% of the screen */
+    
+    /* width: 75%; 
+    margin-left: 12.5%; 
+    margin-right: 12.5%; */ 
+
+    width: 100%;
+    padding-left: 12.5%; 
+    padding-right: 12.5%;
+    
+    /* padding-top: 2%; 
+    padding-bottom: 3%; */
+    justify-content: center; /*<-- Still needed?*/
+ }   
+
+ .info_container.column {
+    flex-direction: column;
+}
+
+
+ .info_container.white {
+    background-color: white; 
+    
+}  
+
+.info_container.black {
+    background-color: rgb(0, 0, 0);  
+    
+}
+
+ .info_container.left {
+    align-items: left;
+    
+ }   
+
+ .info_container.right {
+    align-items: right;
+ } 
+
+
+.tagline_box {
+    width: calc
+} 
+
+
+
+/* ----------------------------- */ 
+
 
 .topnav {
     background-color: #04AA6D;
@@ -59,15 +141,9 @@ section, summary, time, mark, audio, video {
     } 
 
 
-.colorbox {
-    background-color: white; 
-    padding-top: 10px; 
-    padding-bottom: 10px;
-} 
 
-body {
-    background-color: rgb(0, 0, 0);
- }
+
+
   
 h1{
   font-family: 'Inter', sans-serif;
@@ -100,56 +176,58 @@ h1{
  .tagline {
     font-family: 'Inter', sans-serif;
     color: black; 
-    padding-left: 100px; 
-    font-size: 50px;
+    font-size: 150%; 
+    
  }  
 
     .tagline.small {
-        font-size: 40px;
+        font-size: 250%;
+    } 
+
+    .tagline.big {
+        font-size: 500%;
     }
 
     .tagline strong.red {
         /* font-size: 65px; */
         color: rgb(255, 0, 0); 
-        font-size: 100px;
-    }  
+        font-size: 125%;
+    }   
 
-    .tagline.center {
-        padding-left: 0px; 
-        text-align: center; 
-        font-size: 95px; 
+    .tagline strong.green {
+        
+        color: #00cc99; 
+        font-size: 125%;
     } 
 
-        .tagline.center.white {
+    .tagline.center {
+        text-align: center; 
+    } 
+
+        /* .tagline.center.white {
             color: white; 
         } 
 
         .tagline.center.black {
             color: black; 
-        }
+        } */
 
 
-    .tagline strong.green {
-        /* font-size: 65px; */
-        color: #00cc99; 
-        font-size: 100px;
-    }  
+     
     
     .tagline.white {
         color: #FFFFFF;  
         
     }  
+    
 
-    .tagline.white.big { /*Changed */
-        font-size: 85px; 
-        text-align: left;
-    }  
+    
 
-    .tagline.white.small { /*Changed */
+    /* .tagline.white.small { /*Changed 
         font-size: 42px; 
         text-align: left;
     }
-    
+     */
 
     li .tagline {
         font-size: 45px; 
@@ -181,18 +259,27 @@ ul.description  li {
 
 /* Classes for feature images */
 
+
+/* Try to make all boxes for features the same width (and rename to something else) */
 .features {
     display: flex; 
     justify-content: center; 
     padding: 0; 
-    list-style: none;
+    list-style: none; 
+     
+    
+    
 } 
 
     .features li {
         width: calc(33.33333% - 2em);
 		margin-left: 2em;
 		margin-top: 3em;  
-        padding: 0;
+        padding: 0;  
+        border: 2px solid black; /*Box size should be adjusted will smaller screen sizes*/
+        width: 25%;
+    
+        
     } 
 
 
@@ -224,27 +311,9 @@ ul.description  li {
     
  }  
 
- .info_container {
-    display: flex;  
-    padding-top: 2%; 
-    padding-bottom: 5%;
-    justify-content: center;
- }  
+ 
 
- .info_container.left {
-    align-items: left;
-    
- }   
-
- .info_container.right {
-    align-items: right;
- } 
-
- .logo_adjust{
-    padding-right: 10%;
-    filter: invert(47%) sepia(91%) saturate(612%) hue-rotate(122deg) brightness(102%) contrast(102%); 
-    
- } 
+ 
 
 
 
@@ -252,15 +321,18 @@ ul.description  li {
 
 /* Image Classes */
 
-
+.logo_adjust{
+    /* padding-right: 10%; */
+    filter: invert(47%) sepia(91%) saturate(612%) hue-rotate(122deg) brightness(102%) contrast(102%); 
+    
+ } 
 
 .img_anchor { /* Should be used in divs, since imgs are inline */
     text-align: center;
 }
 
 .icon {
-    padding-left: 100px; 
-    padding-top: 45px;
+    text-align: center;
  }
 
     .icon.moneyloss{

@@ -279,6 +279,10 @@ ul.description  li {
       overflow: hidden; 
       font-family: 'Inter', sans-serif;
       color: white;
-  }
+  } 
+
+  .img_anchor { /* Should be used in divs, since imgs are inline */
+    text-align: center;
+}
   
   
