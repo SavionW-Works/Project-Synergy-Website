@@ -3,6 +3,12 @@
     padding: 0px;
 }
 
+header {
+    top: 0;
+    position: sticky;  /*Doesn't work in topnav, even without overflow...?*/ 
+    z-index: 10; /*Keeps header above .svg images*/
+}
+
 body {
     
     margin: 0;
