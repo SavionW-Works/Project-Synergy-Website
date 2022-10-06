@@ -365,6 +365,10 @@ ul.description  li {
         overflow: hidden; 
         font-family: 'Inter', sans-serif;
         color: white;
+    }  
+
+    .contact_box {
+        display: flex; 
     }
     
     
