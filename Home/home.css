@@ -21,10 +21,7 @@ body {
       flex-direction: column; 
       flex-wrap: wrap;
     } 
-
     /* How do I set more specific media queries?? */
-
-    
   }
 
 /*
@@ -143,7 +140,7 @@ section, summary, time, mark, audio, video {
         color: white;
         font-family: 'Inter', sans-serif; 
         font-weight: bold; 
-    font-family: 'Inter', sans-serif;
+        font-family: 'Inter', sans-serif;
     } 
 
 

@@ -1,3 +1,11 @@
+body { 
+  margin: 0;
+  min-height: 100vh; 
+  font-family: sans-serif;
+  background-color: rgb(0, 0, 0);
+}
+
+
 .topnav {
     background-color: #04AA6D;
     overflow: hidden; 

@@ -1,8 +1,16 @@
+
+* {
+  box-sizing: border-box; 
+  padding: 0px;
+} 
+
+  
+
 body { 
   margin: 0;
   min-height: 100vh; 
   font-family: sans-serif;
-  
+  background-color: white;
 }
 
 .topnav {
@@ -39,16 +47,22 @@ body {
   font-family: 'Inter', sans-serif;
   } 
 
-  
+
+p {
+  font-family: 'Inter', sans-serif; 
+  font-size: 150%;
+}
 h1{
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif; 
+  font-size: 300%;
 }
  h2{
   font-family: 'Inter', sans-serif;
   font-size: 17px;
  }
  h3{
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif; 
+  font-size: 200%;
  }
  ul{
   font-family: 'Inter', sans-serif;
@@ -105,21 +119,50 @@ h1{
       
   }
 
- .container { 
-    font-family: 'Inter', sans-serif;
-    display: flex; 
-    /* border: 10px solid goldenrod;     */
-    width: 100%; 
-    flex-direction: row; 
-    flex-wrap: wrap;  
-    justify-content: center;
+  .info_container {
+    
+    display: flex;  
+    width: 100%;
+    padding-left: 25%; 
+    padding-right: 25%;
+
+    justify-content: center; /*<-- Still needed?*/
+ }   
+
+ .info_container.column {
+    flex-direction: column;
+}
+
+.info_container h3 {
+  margin-top: 2%;
+} 
+
+.info_container p {
+  margin-top: 0%;
+}
+
+ .info_container.white {
+    background-color: white; 
+    
 }  
 
-footer .container {
-  border: none;
-  justify-content: center; 
-  background-color: green;
+.info_container.black {
+    background-color: rgb(0, 0, 0);  
+    
 }
+
+ .info_container.left {   
+    align-items: left;
+ }   
+
+ .info_container.right {
+    align-items: right;
+ } 
+
+
+.tagline_box {
+    width: calc
+} 
 
 
 /* Form Styles */
