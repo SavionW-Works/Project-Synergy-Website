@@ -1,9 +1,21 @@
+* {
+  box-sizing: border-box; 
+  padding: 0px;
+}
+
+header {
+  top: 0;
+  position: sticky;  /*Doesn't work in topnav, even without overflow...?*/ 
+  z-index: 10; /*Keeps header above .svg images*/
+} 
+
 body { 
   margin: 0;
   min-height: 100vh; 
   font-family: sans-serif;
-  background-color: rgb(0, 0, 0);
+  background-color: white;
 }
+
 
 
 .topnav {
@@ -49,7 +61,7 @@ h1{
   font-size: 17px;
  }
  h3{
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif; 
  }
  ul{
   font-family: 'Inter', sans-serif;
@@ -59,7 +71,313 @@ h1{
  } 
 
  .tagline {
-    color: black; 
-    padding-left: 100px; 
-    font-size: 50px;
- }
+  font-family: 'Inter', sans-serif;
+  color: black; 
+  font-size: 150%; 
+  
+}  
+
+  .tagline.small {
+      font-size: 250%;
+  } 
+  
+  .tagline.mid {
+    font-size: 350%;
+} 
+
+  .tagline.big {
+      font-size: 500%;
+  } 
+
+  .tagline strong.adjust {
+    font-size: 90%;
+  }
+
+  .tagline strong.red {
+      /* font-size: 65px; */
+      color: rgb(255, 0, 0); 
+      /* font-size: 125%; */
+  }   
+
+  .tagline strong.green {
+      
+      color: #00cc99; 
+      /* font-size: 125%; */
+  } 
+
+  .tagline.center {
+      text-align: center; 
+      justify-content: center; 
+  } 
+
+      /* .tagline.center.white {
+          color: white; 
+      } 
+
+      .tagline.center.black {
+          color: black; 
+      } */
+
+
+   
+  
+  .tagline.white {
+      color: #FFFFFF;  
+      
+  }
+
+
+
+
+ .container {
+  display: flex; 
+  /* border: 10px solid goldenrod;     */
+  width: 100%; 
+  flex-direction: row; 
+  flex-wrap: wrap;  
+  padding-left: 17.5%; 
+  padding-right: 12.5%; 
+  justify-content: center;
+}  
+
+.container .left {
+  justify-content: left; 
+  padding-left: 0%; 
+  margin-bottom: 0%;
+} 
+
+.container .title {
+  padding-right: 40%;
+}
+
+/* border: 10px solid greenyellow; */
+
+ .box { /*Flex Item (when it's placed inside of .container) */
+    
+        /* Flexbox is special because it will automatically adjust items if their width is too big for the screen */
+        display: flex;
+        color: black; 
+        
+        /* The subtrahend (second number) should be TWO TIMES the padding or width*/
+        font-size:  175%;
+         
+        padding: 10px; /*10px is 1/2 of the 20px in calc()*/
+    
+        /* Calc: 
+            -Properties like padding and margins can break the even percentages set for flexboxes 
+            -You can account for this by using :calc(#% - #px) next to your width and heights 
+            -The offset of the percent should match the px of your margins or padding
+        */
+        /* border: 10px solid greenyellow; */
+    }   
+
+    
+    /* Box keywords */
+    .box.small {
+        font-size:  110%; 
+        padding-bottom: 0%; 
+        margin-bottom: 0%;
+    }  
+
+    .box.mid {
+      font-size:  150%; 
+      padding-bottom: 0%; 
+      margin-bottom: 0%;
+  }
+
+    .box.column {
+      flex-direction: column;
+  }
+    
+    .box.quarter {
+        width: calc(25% - 20px); 
+    }  
+
+    .box.half {
+        width: calc(50% - 20px);  
+        
+    }
+
+    .box.threequarter {
+        width: calc(75% - 20px); 
+        padding-left: 0%; 
+    }   
+
+    .box.full {
+        width: calc(100% - 20px); 
+    } 
+
+    .box.center {
+        justify-content: center; 
+          
+    }  
+
+    .box li {
+        padding: .3%; 
+        list-style: none; /*Removes bullet points*/
+    }
+
+    .box img{
+      margin: 1.1vw; 
+      text-align: center;
+    }
+
+    .bulletIndent{
+        margin-left:4%; 
+        font-size: 80%;
+    }
+
+    /* Tag specific changes */
+    
+
+    .title_box {
+        color: black; 
+        width: 100%; 
+        padding-left: 12.5%; 
+        padding-right: 12.5%; 
+        justify-content: center;
+        flex-direction: column;  
+        
+        font-size:  250%; 
+         
+
+    } 
+
+    .title_box h1 {
+        text-decoration: underline; 
+        
+    }  
+
+    .title_box li {
+        text-align: left;
+    }
+
+    .title_box.center {
+        text-align: center;
+    }  
+
+
+    .info_container {
+    
+      display: flex;  
+       
+      
+      /* Takes up center 75% of the screen */
+      
+      /* width: 75%; 
+      margin-left: 12.5%; 
+      margin-right: 12.5%; */ 
+  
+      width: 100%;
+      padding-left: 12.5%; 
+      padding-right: 12.5%;
+      
+      /* padding-top: 2%; 
+      padding-bottom: 3%; */
+      justify-content: center; /*<-- Still needed?*/
+   }   
+  
+   .info_container.column {
+      flex-direction: column;
+  }
+  
+  
+   .info_container.white {
+      background-color: white; 
+      
+  }  
+  
+  .info_container.black {
+      background-color: rgb(0, 0, 0);  
+      
+  }
+  
+   .info_container.left {
+      align-items: left;
+      
+   }   
+  
+   .info_container.right {
+      align-items: right;
+   } 
+
+
+   .features {
+    display: flex; 
+    justify-content: center; 
+    padding: 0; 
+    list-style: none; 
+     
+    
+    
+} 
+
+    .features li {
+        width: calc(33.33333% - 2em);
+		    margin-left: 2em;
+		    margin-top: 3em;  
+        padding: 0;  
+        border: 2px solid black; /*Box size should be adjusted will smaller screen sizes*/
+        width: 25%;
+    
+        
+    } 
+
+
+    .features li h1 {
+        margin-top: 0em; 
+        margin-bottom: 0em;
+        text-align: center; 
+    } 
+
+    .features li p {
+        margin-top: 0em;
+        text-align: center; 
+        font-size: 200%;
+    }  
+
+
+    .img_anchor { /* Should be used in divs, since imgs are inline */
+      text-align: center;
+  }
+  
+  .icon {
+      text-align: center;
+   }
+  
+      .icon.moneyloss{
+          padding-right: 10%;
+          filter: invert(16%) sepia(98%) saturate(5413%) hue-rotate(359deg) brightness(100%) contrast(121%); 
+          
+      }
+  
+  
+      .icon.gas{
+          padding-right: 10%;
+          filter: invert(47%) sepia(93%) saturate(396%) hue-rotate(4deg) brightness(90%) contrast(84%); 
+          
+      } 
+  
+      .icon.battery{
+          padding-right: 10%;
+          filter: invert(42%) sepia(34%) saturate(5490%) hue-rotate(188deg) brightness(101%) contrast(108%); 
+          
+      } 
+  
+      footer {
+          background-color: #04AA6D;
+          overflow: hidden; 
+          font-family: 'Inter', sans-serif;
+          color: white;
+      }  
+  
+      .contact_box {
+          display: flex; 
+      }
+      
+      
+
+    .logo_adjust{
+      filter: invert(47%) sepia(91%) saturate(612%) hue-rotate(122deg) brightness(102%) contrast(102%); 
+      
+   } 
