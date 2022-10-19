@@ -103,7 +103,13 @@ h1{
       
       color: #00cc99; 
       /* font-size: 125%; */
-  } 
+  }  
+
+  .tagline strong.yellow {
+      
+    color: #FFE400;
+    /* font-size: 125%; */
+}
 
   .tagline.center {
       text-align: center; 
@@ -131,7 +137,7 @@ h1{
 
  .container {
   display: flex; 
-  /* border: 10px solid goldenrod;     */
+  /* border: 10px solid sgoldenrod;     */
   width: 100%; 
   flex-direction: row; 
   flex-wrap: wrap;  
@@ -339,7 +345,10 @@ h1{
 
     .img_anchor { /* Should be used in divs, since imgs are inline */
       text-align: center;
-  }
+  } 
+
+
+  
   
   .icon {
       text-align: center;
@@ -362,7 +371,12 @@ h1{
           padding-right: 10%;
           filter: invert(42%) sepia(34%) saturate(5490%) hue-rotate(188deg) brightness(101%) contrast(108%); 
           
-      } 
+      }  
+
+      .icon.crown {
+        /* transform: rotate(30deg);   */
+        filter: invert(84%) sepia(9%) saturate(6009%) hue-rotate(3deg) brightness(103%) contrast(114%); 
+      }
   
       footer {
           background-color: #04AA6D;
