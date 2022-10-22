@@ -137,7 +137,7 @@ h1{
 
  .container {
   display: flex; 
-  /* border: 10px solid sgoldenrod;     */
+  /* border: 10px solid goldenrod;     */
   width: 100%; 
   flex-direction: row; 
   flex-wrap: wrap;  
@@ -146,14 +146,21 @@ h1{
   justify-content: center;
 }  
 
-.container .left {
+
+
+.container.left {
   justify-content: left; 
   padding-left: 0%; 
   margin-bottom: 0%;
 } 
 
-.container .title {
+.container.title {
   padding-right: 40%;
+} 
+
+.container.center {
+   justify-content: center; 
+  
 }
 
 /* border: 10px solid greenyellow; */
@@ -166,7 +173,7 @@ h1{
         
         /* The subtrahend (second number) should be TWO TIMES the padding or width*/
         font-size:  175%;
-         
+        
         padding: 10px; /*10px is 1/2 of the 20px in calc()*/
     
         /* Calc: 
@@ -198,6 +205,10 @@ h1{
     .box.quarter {
         width: calc(25% - 20px); 
     }  
+    
+    .box.third{
+      width: calc(33.33% - 20px);
+    }
 
     .box.half {
         width: calc(50% - 20px);  
@@ -319,7 +330,7 @@ h1{
 } 
 
     .features li {
-        width: calc(33.33333% - 2em);
+        /* width: calc(33.33333% - 2em); */
 		    margin-left: 2em;
 		    margin-top: 3em;  
         padding: 0;  
@@ -348,6 +359,18 @@ h1{
   } 
 
 
+
+  /* JPG/PNG Adjustments */ 
+
+  .phone_adjust.goals { 
+    max-width: 100%; 
+    height: 100%;
+  }
+  
+  .phone_adjust.pantry { 
+    max-width: 100%; 
+    height: auto; 
+  }
   
   
   .icon {
