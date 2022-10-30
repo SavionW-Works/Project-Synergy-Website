@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head> 
+        
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="">
@@ -10,11 +11,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         
-        <!-- Stylesheet -->
+        // <!-- Stylesheet --> 
         <link rel="stylesheet" href="/FAQ/faq.css"> 
-        <title>FAQ - RATION</title>
+        <title>FAQ - RATION</title> 
+        
     </head>
-    <body>
+    <body>   
+        
+        
+       
         <div class="topnav">
             <a href="/Home/home.html" > RATION </a>
             <a href="/About/about.html">About Us</a>
@@ -23,58 +28,111 @@
             <a href="/Contact/contact.html">Contact</a>
             
           </div>  
-
+          
           <h1 class ="tagline center big"><strong class ="red">Questions?</strong></h1>
         
         <section> 
             <div class="info_container left column">  
-                <h1> Category</h1>  
-                <div class="info_container left column">
-                    <h3> Question...?</h3> 
-                    <p>Answer</p> 
-                    
-                    <h3> Question...?</h3> 
-                    <p>Answer</p> 
+                <h1> <u>App Functions</u></h1>  
+                <button class="accordion">How does Ration use my data?</button> 
+                <div class="panel">
+                    <p>
+                        By default Ration chooses to display non-targeted advertisements, 
+                        and WILL NOT use a personal advertising profile from your device for ads 
+                        unless you choose “Enable Targeted Advertising” in your settings.  
+                    </p>
+                        <br> 
+                    <p> Ration also collects anonymous user data to aid its internal functionality. 
+                        This includes but is not limited to: 
+                    </p> 
+                    <ul> 
+                        <li>The frequency/time/quantity in which items/Custom Meals are bought or expire </li> 
+                        <li>Carbon footprint </li> 
+                        <li>Location for scanning local pantries </li>
+                    </ul> 
 
-                    <h3> Question...?</h3> 
-                    <p>Answer</p>
+                    <p> If at any point you feel uncomfortable with this collection, 
+                        you can opt out at any time in the settings by choosing 
+                        “Opt Out of Functional Data Collection”.
+                    </p>
+                </div>
+                
+                <button class = "accordion"> How will the app know when I consume or waste an item I have?</button> 
+                <div class = "panel">   
+                    <p> You will need to log an item’s status in the app.  </p>
+                </div>
+                       
+                <button class = "accordion"> How does the Expiration Calculator Work?</button> 
+                <div class = "panel">   
+                    <p> The Expiration calculator is meant to calculate the approximate time in which complex, 
+                        home cooked meals might go bad. It works primarily by referencing its default database for home cooked items.
+                        <br><br>
+                        For a potentially better estimate, you can also receive the average time it took for other Ration users’ 
+                        Custom Meals to go bad or have the app compare the times of the other users who had similar ingredients 
+                        (ingredients from the same food brands).    
+                    </p>
+                </div>  
+
+                <button class = "accordion">How can I upload things to the virtual pantry/fridge?</button> 
+                <div class = "panel">   
+                    <p> You can scan your item through barcode or image or manually type in your food item on the app.</p>
+                </div>  
+
+                <button class = "accordion"> How does Virtual Pantry Sharing work?</button> 
+                <div class = "panel">   
+                    <p> When you finish making your pantry,  click the “Share” button to generate a link or QR code for other Ration users to access your pantry. 
+                        Once you share a pantry, you become the “Admin” that can drop other users and determine who has privileges to edit.  
+                    </p>
+                </div>  
+
+                <button class = "accordion"> Where does the Ration database come from?</button> 
+                <div class = "panel">   
+                    <p> Our database is made up of two components, food item data and food expiry data.
+                        <br><br> 
+                        <strong>Food Item</strong> data comes from Ration users and our APIs. 
+                        <br><br>
+                       <strong>Expiry data</strong> for most foods comes from the United States Food Safety and Inspection Service directly from the United States' government website. Data for Custom Meals not found in the FSIS database may also come from Ration users with similar meals.
+                         
+                    </p>
+                </div> 
+                    
+                    
                 </div>
             </div>
         </section> 
 
-        <section> 
-            <div class="info_container left column">  
-                <h1> Category</h1>  
-                <div class="info_container left column">
-                    <h3> Question...?</h3> 
-                    <p>Answer</p> 
-                    
-                    <h3> Question...?</h3> 
-                    <p>Answer</p> 
 
-                    <h3> Question...?</h3> 
-                    <p>Answer</p>
-                </div>
-            </div>
-        </section> 
-
-        <section> 
-            <div class="info_container left column">  
-                <h1> Category</h1>  
-                <div class="info_container left column">
-                    <h3> Question...?</h3> 
-                    <p>Answer</p> 
-                    
-                    <h3> Question...?</h3> 
-                    <p>Answer</p> 
-
-                    <h3> Question...?</h3> 
-                    <p>Answer</p>
-                </div>
-            </div>
-        </section>
         
-    </body> 
+        <!-- <section> 
+
+            <div class="info_container left column">  
+                <h1> <u>Category</u> </h1>  
+                
+                <button class = "accordion"> Question?</button> 
+                <div class = "panel">   
+                    <p> Answer </p>
+                </div> 
+
+                <button class = "accordion"> Question?</button> 
+                <div class = "panel">   
+                    <p> Answer </p>
+                </div> 
+
+                <button class = "accordion"> Question?</button> 
+                <div class = "panel">   
+                    <p> Answer </p>
+                </div>
+                
+            </div>
+        </section>  -->
+
+
+      
+    <!-- Animations do not work for some reason, so a script w/o them is used :/ -->
+    <script type="text/javascript" src="/FAQ/functions.js"></script>   
+    </body>  
+    
+
 
 
 </html>
