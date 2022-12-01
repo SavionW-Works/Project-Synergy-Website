@@ -10,153 +10,211 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 		
         <!-- Stylesheet -->
-        <link rel="stylesheet" href="home.css" /> 
-        <title>Home - RATION</title>
+        <link rel="stylesheet" href="style.css" /> 
+        <title>Home - RATION</title> 
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"> 
+
+    <!-- Animate.css reference --> 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     </head>  
 
     <body> 
-        <header> 
-            <div class="topnav">
-				<a class = "active" href="/Home/home.html" > RATION </a>
-				<a href="/About/about.html">About Us</a>
-				<a href="/Features/features.html">Features</a> 
-                <a href="/FAQ/faq.html">FAQs</a>
-				<a href="/Contact/contact.html">Contact</a>
-				
-			</div>
-        </header>  
         
-        <section>   
-            <div class="info_container black left"> 
-                
-                <div> 
-                    <h2 class="tagline white big"> Stop  <strong class = "red">WASTING</strong> <br>
-                        Start <strong class = "green">RATION</strong>ing </h2>  
-                    <p class="tagline white small"> <strong> RATION </strong> is a smart food-waste prevention app that saves money, time, energy and the planet. </p> 
-                </div>
-                
-                <div> 
-                    <img src="/Images/Ration logo.png" alt="Ration Logo in a Smartphone" class="logo_adjust">
-                </div>
-                  
 
+            <!-- Navbar -->
+    <section class = "sticky-top">
+        <!-- COMPLETE NAVBAR DOC: https://getbootstrap.com/docs/5.2/components/navbar/#how-it-works -->
+
+      <!-- Makes a navbar (at lg sizes and above)   -->
+      <nav class="navbar navbar-expand-lg bg-success navbar-dark py-3"> 
+        
+        <!-- Keeping the navbar in a container helps with padding -->
+        <div class="container"> 
+          <h2> 
+            <a href="\Home\home.html" class="navbar-brand fs-2 fw-bold">RATION</a> 
+          </h2>
+        
+          
+
+          <!-- Hamburger button for navbar. Targets the id = #navmenu -->
+          <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Allows navbar to collapse (disappear) -->
+          <div class="collapse navbar-collapse" id="navmenu">
+            
+            <!-- Actual navbar text -->
+            <ul class="navbar-nav ms-auto fs-3 fw-bold"> 
+              
+                <li class="nav-item">
+                    <a href="\About\about.html" class="nav-link">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="\Features\features.html" class="nav-link">Features</a>
+                </li> 
+
+                <li class="nav-item">
+                    <a href="\FAQ\faq.html" class="nav-link">FAQs</a>
+                </li> 
+
+                <li class="nav-item">
+                    <a href="#Contact" class="nav-link">Contact</a>
+                </li>
+            
+            </ul>
+          
+          </div>
+        </div>
+        
+      </nav>
+    </section> 
+            
+         <!-- TAGLINE -->
+    <section class="bg-dark text-light p-5 text-center text-sm-start" id="AboutUs"> 
+        <div class="container"> 
+          <!-- First row in system -->
+          <div class="d-sm-flex align-items-center justify-content-between animate__animated animate__slideInLeft">
+            <div>
+              
+                <h1 class="display-4 fw-bold"> Stop <strong class="display-2 text red fw-bold"> WASTING </strong> </h1>
                 
-            </div>
-               
-        </section>
+                 <h1 class="display-4 fw-bold">Start <strong class="display-2 text green fw-bold"> RATION</strong>ing </h1>
+
+              
+              <!-- lead paragraphs stand out more -->
+              <h2 class="lead my-4 fs-1"> 
+                <strong class="display-4 text green fw-bold"> RATION </strong> is a smart food-waste prevention app that saves money, time, energy and the planet. 
+              </h2>  
+              
+            <a href="#Downloads" class="btn nav-link text-white btn-primary btn-lg p-3 w-50"> <h2 class="fs-1 fw-bold"> Download Now! </h2>
+                
+            </a>
+              
+           </div>
+              <img  src="/Images/Ration logo.png" alt="Ration Logo in a Smartphone" class = "logo_adjust">
+          </div>
+        </div>
+      </section> 
              
         <hr> <!-- Horizontal Rule ; creates a nice line to divide parts of the page-->
 
-        <section>   
-            <div class ="info_container column white"> 
-                <h1 class ="tagline center big">
-                    Food waste is a <strong class="red"> BIG </strong>problem 
-                    
-                </h1>  
+    <!-- FEATURE CARDS -->
+    <section class = "  text-sm-start" id="Features"> 
+        <div class="container w-75 shadow-lg rounded  rounded-4 py-5 text-center">
+            <h2 class="display-4 fw-bold">Food waste is a <strong class="display-2 text green fw-bold"> BIG </strong> problem </h2> 
+            <h2 class="fw-bold my-4"> <strong class="text red fw-bold"> 1.3 BILLION </strong> tons of food are wasted each year. This means:  </h2> 
+          <div class="row text-center">  
+           
+            <!-- Card -->
+            <div class="col-lg w-75">
+              <div class="card shadow-lg rounded bg-dark text-light card-body text-center"> 
+                  <!-- Image -->
+                  <img src="/Images/iconmonstr-currency-4.svg" alt="US dollars going down"  class="icon moneyloss"> 
+                  <!-- Title -->
+                  <h3 class="card-title my-3 fw-bold fs-1"> MILLIONS</h3> 
+                  <!-- Description -->
+                  <p class="card-text fs-4">of dollars are wasted by consumers</p> 
+              </div>
+            </div>  
 
-                <p class = "tagline center small"> 
-                    <strong> 1.3 BILLION </strong> tons of food are wasted each year. This means:
-                </p>
-        
-                
+            <!-- Card -->
+            <div class="col-lg">
+                <div class="card shadow-lg rounded bg-dark text-light card-body text-center"> 
+                    <!-- Image -->
+                    <img src="/Images/iconmonstr-weather-90.svg" alt="CO2 Gas" class="icon gas"> 
+                    <!-- Title -->
+                    <h3 class="card-title my-3 fw-bold fs-1"> GREENHOUSE GASES</h3> 
+                    <!-- Description -->
+                    <p class="card-text fs-4">of dollars are wasted by consumers</p> 
+                </div>
+            </div> 
+              
+              <!-- Card -->
+            <div class="col-lg">
+                <div class="card shadow-lg rounded bg-dark text-light card-body text-center"> 
+                    <!-- Image -->
+                    <img src="/Images/iconmonstr-smiley-17.svg" alt="A sad face" class = "icon face"> 
+                    <!-- Title -->
+                    <h3 class="card-title my-3 fw-bold fs-1"> HUNGER</h3> 
+                    <!-- Description -->
+                    <p class="card-text fs-4">rises from food shortages</p> 
+                </div>
+            </div> 
+
+              <!-- Card -->
+            <div class="col-lg">
+                <div class="card shadow-lg rounded bg-dark text-light card-body text-center"> 
+                    <!-- Image -->
+                    <img src="/Images/iconmonstr-battery-4.svg" alt="A low battery"  class="icon battery">     
+                    <!-- Title -->
+                    <h3 class="card-title my-3 fw-bold fs-1"> ENERGY </h3> 
+                    <!-- Description -->
+                    <p class="card-text fs-4">is being squandered</p> 
+                </div>
             </div>
-            <div class = "info_container white"> 
-                    <ul class ="features">  
-                        <li> 
-                            <div class = "img_anchor"> 
-                                <img src="/Images/iconmonstr-currency-4.svg" alt="US dollars going down"  class="icon moneyloss">
-                            </div>
-                            
-                            
-                            <h1 class = "tagline small center"> MILLIONS </h1>
-                            <p> 
-                                    of dollars are wasted by consumers
-                            </p>  
-                        </li>  
-    
-                        <li>  
-                            <div class = "img_anchor" style="padding-left: 10%;"> <!--slightly off-center for some reason-->
-                                <img src="/Images/iconmonstr-weather-90.svg" alt="CO2 Gas" class="icon gas">
-                            </div>
-                               
-                            <h1 class = "tagline"> GREENHOUSE GASES </h1>
-                            <p> are being created by landfills </p>
-                        </li> 
-    
-                        <li> 
-                            <div class = "img_anchor" > 
-                                <img src="/Images/iconmonstr-smiley-17.svg" alt="A sad face" class = "icon">
-                            </div>
-                            <h1 class ="tagline"> HUNGER </h1> 
-                            <p> rises from food shortages</p>    
-                        </li> 
-                        
-                        <li> 
-                            <div class = "img_anchor" style="padding-left: 10%;"> <!--slightly off-center for some reason-->
-                                <img src="/Images/iconmonstr-battery-4.svg" alt="A low batter"  class="icon battery">    
-                            </div>
-                            <h1 class = "tagline"> ENERGY </h1> 
-                            <p> is being squandered </p>                          
-                        </li>
-                </ul>   
-            </div>
-         
-        </section> 
+            
+            
+
+          </div>
+        </div>
+      </section> <!--END OF FEATURES-->
+
+
         
         <hr> <!-- Horizontal Rule ; creates a nice line to divide parts of the page-->
         
-        <section>  
-            
-            <div class="info_container black"> 
-                <h1 class ="tagline big white center"> <!--Only becomes two things (big and white)-->
-                    RATION is a <strong class="green"> POWERFUL </strong>solution
-                </h1>
-            </div>
-            
-            <div class = "info_container black"> 
-                
-                <div>
-                    <img src="/Images/iconmonstr-recycling-15.svg" alt="A recycling icon" style="padding-left: 100px; padding-top: 45px;" class="logo_adjust">
-                </div>
-                  
-                <div class="description" style="padding-left: 0px;"> 
-                    <p class ="tagline white" style="text-align:left"> Our free app puts your food supply in the palm of your hand, 
-                        empowering you with cutting edge tools and databases. </p> 
 
-                    <p class = "tagline white" style="text-align:left"> Learn about how you can instantly use more and <a href="/features.html"> waste less. </a> </p>
-                </div>
-                   
-                   
-                   <!--Strengthen with links to sources that support point...?-->
+        <section class= "bg-dark p-5">
+            <div class="container align-items-center text-center text-light p-5"> 
+                <div class = "row row-sm-6">  
+                    <h2 class= "display-2 p-3"> <strong class="display-1 text green fw-bold"> RATION </strong> is a <strong class="display-1 text red fw-bold"> POWERFUL </strong> Solution </h2>   
+                    <div class="col">
+                        <p class = "fs-2"> Our free app puts your food supply in the palm of your hand, 
+                            empowering you with cutting edge tools and databases. </p> 
+                        <a type="button" href="/Features/features.html" class="btn btn-primary p-3"> <strong class="display-2 fw-bold"> LEARN MORE </strong> </a>
+                        <!-- <h2 class="display-4">  Learn about how you can instantly use more and <span class="text pink fw-bold"> WASTE LESS </span> </h2>  -->
+                    </div> 
+                    
+                    <div class="col">
+                        <img src="/Images/iconmonstr-recycling-15.svg" alt="A recycling icon" class="logo_adjust">
+                    </div>     
+                </div> 
             </div>
-           
         </section>
-        
 
-           
-           
-
-        
-
-       
-    
-    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body> 
 
-    <footer>
-        <div class ="info_container">
-
-            <h3> Contact Us</h3> <!--Center and put links in a flexbox-->
-            <ul> 
-                <li>Email</li>
-                <li>Twitter</li> 
-                <li>LinkedIn</li> 
-    
-            </ul>
-    
-            <img src="Facebook-logo.jpg" alt="Facebook-logo">
+     <!-- Footer --> 
+     <footer class="p-4 bg pink text-dark text-center position-relative"> 
+        <div class="container">
+            <!-- Social Media Buttons --> 
+            <i class="bi bi-instagram display-4 pe-4"></i> 
+            <i class="bi bi-facebook display-4 pe-4"></i>  
+            <i class="bi bi-twitter display-4 pe-4"></i> 
+            <i class="bi bi-snapchat display-4 pe-4"></i> 
+            <i class="bi bi-youtube display-4 pe-4"></i>
+            
+            <!-- Copyright -->
+            <p class = "lead"> Copyright <i class="bi bi-c-circle"></i> 2022 RATION  </p> 
+            
+            <!-- Back to Top -->
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1 text-dark"></i>
+            </a>
         </div>
-        
 
     </footer> 
 
