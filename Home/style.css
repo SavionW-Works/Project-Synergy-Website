@@ -10,7 +10,11 @@
 
 .text.green {
     color: #00cc99;
-}  
+}   
+
+.text.d_green {
+    color: #0b4c10;
+}
 
 .logo_adjust{
     /* padding-right: 10%; */

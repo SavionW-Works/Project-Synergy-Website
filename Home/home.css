@@ -10,8 +10,15 @@
 
 .text.green {
     color: #00cc99;
-}  
+}   
 
+.bg.light {
+    background-color:#ffffff;
+}
+
+.bg.green {
+    background-color: #00cc99;
+}  
 .logo_adjust{
     /* padding-right: 10%; */
     filter: invert(47%) sepia(91%) saturate(612%) hue-rotate(122deg) brightness(102%) contrast(102%); 
