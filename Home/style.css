@@ -16,6 +16,15 @@
     color: #0b4c10;
 }
 
+.text.yellow {
+    color: #FFE400;
+}
+ 
+
+.bg.green {
+    background-color: #00cc99;
+} 
+
 .logo_adjust{
     /* padding-right: 10%; */
     filter: invert(47%) sepia(91%) saturate(612%) hue-rotate(122deg) brightness(102%) contrast(102%); 
@@ -27,39 +36,36 @@
  }
 
     .icon.moneyloss{
-        
+        padding-right: 10%;
         filter: invert(16%) sepia(98%) saturate(5413%) hue-rotate(359deg) brightness(100%) contrast(121%); 
         
     }
 
 
     .icon.gas{
-        
+        padding-right: 10%;
         filter: invert(47%) sepia(93%) saturate(396%) hue-rotate(4deg) brightness(90%) contrast(84%); 
         
     } 
 
-    .icon.face{
-        
-        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(131deg) brightness(102%) contrast(102%);
-        
-    }  
-
     .icon.battery{
-        
+        padding-right: 10%;
         filter: invert(42%) sepia(34%) saturate(5490%) hue-rotate(188deg) brightness(101%) contrast(108%); 
         
-    }
-
-    footer {
-        background-color: #04AA6D;
-        overflow: hidden; 
-        font-family: 'Inter', sans-serif;
-        color: #ffffff;
     }  
 
-    .contact_box {
-        display: flex; 
+    .icon.crown {
+      /* transform: rotate(30deg);   */
+      filter: invert(84%) sepia(9%) saturate(6009%) hue-rotate(3deg) brightness(103%) contrast(114%); 
+    }
+
+    
+
+    .phone_pic {
+        height: 75%;
+        /* min-height: 400px; */
+        width: 75%;
+        /* min-width: 200px; */
     }
 
 
