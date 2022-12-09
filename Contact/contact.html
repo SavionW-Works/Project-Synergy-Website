@@ -12,23 +12,80 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         
         <!-- Stylesheet -->
-        <link rel="stylesheet" href="/Contact/contact.css" /> 
-        <title>Contact - RATION</title>
-    </head>
-    <body> 
-        <header> 
-            <div class="topnav">
-                <a href="/Home/home.html" > RATION </a>
-                <!-- <a class="active" href="#home">Home</a> -->
-                <a href="/About/about.html">About Us</a>
-                <a href="/Features/features.html">Features</a> 
-                <a href="/FAQ/faq.html">FAQs</a>
-                <a class = "active" href="/Contact/contact.html">Contact</a>
-                
-              </div>
-        </header>
+    <link rel="stylesheet" href="/FAQ/faq.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"> 
+
+    <!-- Animate.css reference --> 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    </head>  
+
+    <body>
+        <!-- Navbar -->
+    <section class = "sticky-top">
+        <!-- COMPLETE NAVBAR DOC: https://getbootstrap.com/docs/5.2/components/navbar/#how-it-works -->
+
+      <!-- Makes a navbar (at lg sizes and above)   -->
+      <nav class="navbar navbar-expand-lg bg-success navbar-dark py-3"> 
         
-       <h1 class ="tagline center big"><strong class ="green">Contact Us</strong></h1>
+        <!-- Keeping the navbar in a container helps with padding -->
+        <div class="container"> 
+            <svg width="56" height="48" viewBox="0 0 225 192">
+                <image href="/Images/Ration_Logo.svg" alt="Clipboard Icon">
+            </svg>
+          <h2 class="pt-3 ps-3">  
+            
+            <a href="\Home\home.html" class="navbar-brand fs-2 fw-bold">RATION</a> 
+          </h2>
+        
+          
+
+          <!-- Hamburger button for navbar. Targets the id = #navmenu -->
+          <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Allows navbar to collapse (disappear) -->
+          <div class="collapse navbar-collapse" id="navmenu">
+            
+            <!-- Actual navbar text -->
+            <ul class="navbar-nav ms-auto fs-3 fw-bold"> 
+              
+                <li class="nav-item">
+                    <a href="\About\about.html" class="nav-link">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="\Features\features.html" class="nav-link">Features</a>
+                </li> 
+
+                <li class="nav-item">
+                    <a href="\FAQ\faq.html" class="nav-link">FAQs</a>
+                </li> 
+
+                <li class="nav-item">
+                    <a href="\Contact\contact.html" class="nav-link">Contact</a>
+                </li>
+            
+            </ul>
+          
+          </div>
+        </div>
+        
+      </nav>
+    </section>  
+    <body> 
+       
+        
+       <h1 class ="tagline center big p-5"><strong class ="green">Contact Us</strong></h1>
         <div class="container">
 
             <form method="get">
@@ -66,13 +123,34 @@
                     
                 </fieldset>  
             <!--Submission-->
-            <div class="formbox submit" >
-                <input type="submit" value="SEND">
+            <div class="formbox submit">
+                <input type="submit" value="SEND" class="display-2">
             </div> 
             </form>  
 
         </div>   
        
 
-    </body>
+    </body> 
+
+    <!-- Footer --> 
+    <footer class="p-4 bg-success text-dark text-center position-relative"> 
+        <div class="container">
+            <!-- Social Media Buttons --> 
+            <i class="bi bi-instagram display-4 pe-4"></i> 
+            <i class="bi bi-facebook display-4 pe-4"></i>  
+            <i class="bi bi-twitter display-4 pe-4"></i> 
+            <i class="bi bi-snapchat display-4 pe-4"></i> 
+            <i class="bi bi-youtube display-4 pe-4"></i>
+            
+            <!-- Copyright -->
+            <p class = "lead"> Copyright <i class="bi bi-c-circle"></i> 2022 RATION  </p> 
+            
+            <!-- Back to Top -->
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1 text-dark"></i>
+            </a>
+        </div>
+
+    </footer>
 </html>

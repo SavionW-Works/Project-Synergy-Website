@@ -241,7 +241,7 @@ input[type=file] {
 /* W3 Schools Accordion Style */ 
  /* Style the buttons that are used to open and close the accordion panel */
  .accordion {
-  background-color: #04AA6D;
+  background-color: #00cc99;
   color: black;
   cursor: pointer;
   padding: 18px;

@@ -11,34 +11,90 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         
-         <!-- Stylesheet --> 
-        <link rel="stylesheet" href="/FAQ/faq.css"> 
-        <title>FAQ - RATION</title> 
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/FAQ/faq.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"> 
+
+    <!-- Animate.css reference --> 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    </head>  
+
+    <body>
+        <!-- Navbar -->
+    <section class = "sticky-top">
+        <!-- COMPLETE NAVBAR DOC: https://getbootstrap.com/docs/5.2/components/navbar/#how-it-works -->
+
+      <!-- Makes a navbar (at lg sizes and above)   -->
+      <nav class="navbar navbar-expand-lg bg-success navbar-dark py-3"> 
         
-    </head>
-    <body>   
-        
-        
-       
-        <div class="topnav">
-            <a href="/Home/home.html" > RATION </a>
-            <a href="/About/about.html">About Us</a>
-            <a href="/Features/features.html">Features</a> 
-            <a class = "active" href="/FAQ/faq.html">FAQs</a>
-            <a href="/Contact/contact.html">Contact</a>
+        <!-- Keeping the navbar in a container helps with padding -->
+        <div class="container"> 
+            <svg width="56" height="48" viewBox="0 0 225 192">
+                <image href="/Images/Ration_Logo.svg" alt="Clipboard Icon">
+            </svg>
+          <h2 class="pt-3 ps-3">  
             
-          </div>  
+            <a href="\Home\home.html" class="navbar-brand fs-2 fw-bold">RATION</a> 
+          </h2>
+        
           
-          <h1 class ="tagline center big"><strong class ="red">Questions?</strong></h1>
+
+          <!-- Hamburger button for navbar. Targets the id = #navmenu -->
+          <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Allows navbar to collapse (disappear) -->
+          <div class="collapse navbar-collapse" id="navmenu">
+            
+            <!-- Actual navbar text -->
+            <ul class="navbar-nav ms-auto fs-3 fw-bold"> 
+              
+                <li class="nav-item">
+                    <a href="\About\about.html" class="nav-link">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="\Features\features.html" class="nav-link">Features</a>
+                </li> 
+
+                <li class="nav-item">
+                    <a href="\FAQ\faq.html" class="nav-link">FAQs</a>
+                </li> 
+
+                <li class="nav-item">
+                    <a href="\Contact\contact.html" class="nav-link">Contact</a>
+                </li>
+            
+            </ul>
+          
+          </div>
+        </div>
+        
+      </nav>
+    </section>  
+    <body>   
+          
+          
+          <h1 class ="tagline center big p-5"><strong class ="green">Questions?</strong></h1>
         
         <section> 
             <div class="info_container left column">  
-                <h1> <u>App Functions</u></h1>  
-                <button class="accordion">How does Ration use my data?</button> 
+                <button class="accordion fw-bold">How does Ration use my data?</button> 
                 <div class="panel">
                     <p>
                         By default Ration chooses to display non-targeted advertisements, 
-                        and WILL NOT use a personal advertising profile from your device for ads 
+                        and <strong> WILL NOT </strong> use a personal advertising profile from your device for ads 
                         unless you choose “Enable Targeted Advertising” in your settings.  
                     </p>
                         <br> 
@@ -53,18 +109,18 @@
 
                     <p> If at any point you feel uncomfortable with this collection, 
                         you can opt out at any time in the settings by choosing 
-                        “Opt Out of Functional Data Collection”.
+                        <strong> “Opt Out of Functional Data Collection” </strong>.
                     </p>
                 </div>
                 
-                <button class = "accordion"> How will the app know when I consume or waste an item I have?</button> 
+                <button class = "accordion fw-bold"> How will the app know when I consume or waste an item I have?</button> 
                 <div class = "panel">   
                     <p> You will need to log an item’s status in the app.  </p>
                 </div>
                        
-                <button class = "accordion"> How does the Expiration Calculator Work?</button> 
+                <button class = "accordion fw-bold"> How does the Expiration Calculator Work?</button> 
                 <div class = "panel">   
-                    <p> The Expiration calculator is meant to calculate the approximate time in which complex, 
+                    <p> The <strong> Expiration Calculator </strong> is meant to calculate the approximate time in which complex, 
                         home cooked meals might go bad. It works primarily by referencing its default database for home cooked items.
                         <br><br>
                         For a potentially better estimate, you can also receive the average time it took for other Ration users’ 
@@ -73,25 +129,27 @@
                     </p>
                 </div>  
 
-                <button class = "accordion">How can I upload things to the virtual pantry/fridge?</button> 
+                <button class = "accordion fw-bold">How can I upload things to the Virtual Pantry?</button> 
                 <div class = "panel">   
                     <p> You can scan your item through barcode or image or manually type in your food item on the app.</p>
                 </div>  
 
-                <button class = "accordion"> How does Virtual Pantry Sharing work?</button> 
+                <button class = "accordion fw-bold"> How does Virtual Pantry Sharing work?</button> 
                 <div class = "panel">   
-                    <p> When you finish making your pantry,  click the “Share” button to generate a link or QR code for other Ration users to access your pantry. 
-                        Once you share a pantry, you become the “Admin” that can drop other users and determine who has privileges to edit.  
+                    <p> When you finish making your pantry,  click the “<strong>Share</strong>” button to generate a link or QR code for other Ration users to access your pantry. 
+                        Once you share a pantry, you become the “<strong>Admin</strong>” that can drop other users and determine who has privileges to edit.  
                     </p>
                 </div>  
 
-                <button class = "accordion"> Where does the Ration database come from?</button> 
+                <button class = "accordion fw-bold"> Where does the Ration database come from?</button> 
                 <div class = "panel">   
                     <p> Our database is made up of two components, food item data and food expiry data.
                         <br><br> 
                         <strong>Food Item</strong> data comes from Ration users and our APIs. 
                         <br><br>
-                       <strong>Expiry data</strong> for most foods comes from the United States Food Safety and Inspection Service directly from the United States' government website. Data for Custom Meals not found in the FSIS database may also come from Ration users with similar meals.
+                       <strong>Expiry data</strong> for most foods comes from the United States Food Safety and Inspection Service directly from the
+                       <a href="https://catalog.data.gov/dataset/fsis-foodkeeper-data">United States' Food and Safety Inspection Service </a>. 
+                       Data for Custom Meals not found in the FSIS database may also come from Ration users with similar meals.
                          
                     </p>
                 </div> 

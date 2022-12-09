@@ -66,6 +66,14 @@
         /* min-height: 400px; */
         width: 75%;
         /* min-width: 200px; */
+    } 
+
+
+    .nav_icon {
+        /* max-height: 5px; */
+        /* min-height: 400px; */
+        max-width: 5px;
+        /* min-width: 200px; */
     }
 
 
