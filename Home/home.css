@@ -52,6 +52,11 @@
         
         filter: invert(42%) sepia(34%) saturate(5490%) hue-rotate(188deg) brightness(101%) contrast(108%); 
         
+    } 
+
+    .icon.arrow {
+        width: 290px; 
+        height: 290px;
     }
 
     footer {
