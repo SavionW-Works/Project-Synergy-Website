@@ -9,4 +9,7 @@ _Business Idea (Ration)_
 - Unlike other apps, it focuses on the consumer, and provides a comprehensive experience, from the grocery lists to the table. 
 - Our website was made with __HTML__, __CSS__, __Javascript__ in the __Bootstrap__ framework.
 
+![image](https://github.com/SavionW-Works/Project-Synergy-Website/assets/72318904/b79f3547-b273-4619-a14f-7df5b9ea6510)
+
+![image](https://github.com/SavionW-Works/Project-Synergy-Website/assets/72318904/c076d37f-5ee9-40a6-9042-12b2877b4938)
 
